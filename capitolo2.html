@@ -1,78 +1,192 @@
-<h1>Capitolo 2</h1>
-<br>
-<a href="#Hardware">Hardware </a>
-<br>
-<a href="#Scheda Madre"> Scheda Madre</a>
-<br>
-<a href="#Periferiche">Periferiche </a>
-<br>
-<a href="#Software">Software </a>
-<br>
-<a href="#Bios">Bios </a>
-<br>
-<a href="#Applicazione">Applicazione </a>
-<br>
-<a href="#Sistema Operativo">Sistema Operativo </a>
-<br>
-<h2 id="Hardware"> Hardware </h2>
-Hardware è un termine inglese che si riferisce ai componenti fisici di un computer o di qualsiasi dispositivo elettronico.
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 2 - Hardware e Software</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?computer,technology') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+        .container h2 {
+            color: #ffcc00;
+        }
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .index {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .index a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: block;
+            margin: 5px 0;
+        }
+        .index a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Capitolo 2: Hardware e Software</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>📌 Indice</h2>
+            <div class="index">
+                <a href="#hardware">🖥 Hardware</a>
+                <a href="#scheda-madre">🔧 Scheda Madre</a>
+                <a href="#periferiche">🎮 Periferiche</a>
+                <a href="#software">💾 Software</a>
+                <a href="#bios">🖥 BIOS</a>
+                <a href="#applicazioni">📱 Applicazioni</a>
+                <a href="#sistema-operativo">💻 Sistema Operativo</a>
+            </div>
+
+            <h2 id="hardware">🖥 Hardware</h2>
+            <p>L'hardware comprende tutte le componenti fisiche di un computer. Si suddivide in:</p>
+            <ul>
+                <li><strong>Hardware interno:</strong> Include il processore (CPU), la memoria RAM, il disco rigido (HDD o SSD), la scheda madre e l'alimentatore. Questi elementi lavorano insieme per eseguire i calcoli e memorizzare i dati.</li>
+                <li><strong>Hardware esterno (periferiche):</strong> Comprende dispositivi di input come tastiera e mouse, e di output come monitor e stampanti.</li>
+            </ul>
+            Hardware è un termine inglese che si riferisce ai componenti fisici di un computer o di qualsiasi dispositivo elettronico.
 <br>
 Si contrappone al software, che indica le componenti logiche del dispositivo.
 <br>
-<img src="ImgHw.jpg">
-<br>
-<h2 id="Scheda Madre"> Scheda Madre </h2>
-<br>
-La scheda madre è un circuito stampato ovvero un supporto che viene usato per connettere e mettere in comunicazione dei componenti in un circuito elettronico.
-<br>
-In questo caso specifico si occupa di ospitare e mettere in comunicazione tutti i componenti che vanno a comporre il PC, 
-<br>
-oltre ad includere alcuni dei componenti necessari per il corretto funzionamento dello stesso.
-<br>
-<img src="ImgScheda.jpg">
-<br>
-<h2 id="Periferiche"> Periferiche </h2>
-Le periferiche di input e output sono componenti essenziali di un sistema informatico.
-<br>
-Le periferiche di input consentono agli utenti di immettere dati, come tastiera e mouse,
-<br>
-mentre le periferiche di output visualizzano o stampano l'output prodotto dal computer, 
-<br>
-come monitor o stampante
-<br>
-<img src="ImgPeri.jpg">
-<br>
-<h2 id="Software"> Software </h2>
-<br>
-Il software è un insieme di istruzioni e dati che informano un computer su come eseguire determinati compiti e operazioni.
+            <p>Negli ultimi anni, i progressi nell'hardware hanno reso i computer sempre più potenti ed efficienti. Ad esempio, i processori multi-core permettono di eseguire più operazioni contemporaneamente, mentre gli SSD garantiscono una maggiore velocità rispetto agli HDD tradizionali.</p>
+            <img src="ImgHw.jpg">
+            <h2 id="scheda-madre">🔧 Scheda Madre</h2>
+            <p>La scheda madre è il componente principale del computer, che collega e permette la comunicazione tra tutte le altre parti.</p>
+            <p>Le sue componenti principali includono:</p>
+            <ul>
+                <li><strong>Socket della CPU:</strong> Dove viene installato il processore.</li>
+                <li><strong>Slot RAM:</strong> Per inserire la memoria volatile del sistema.</li>
+                <li><strong>Chipset:</strong> Gestisce il flusso di dati tra il processore, la memoria e le altre componenti.</li>
+                <li><strong>Porte di espansione:</strong> PCIe per collegare schede video, schede audio e altre periferiche.</li>
+            </ul>La scheda madre è un circuito stampato ovvero un supporto che viene usato per connettere e mettere in comunicazione dei componenti in un circuito elettronico.
+            <br>
+            In questo caso specifico si occupa di ospitare e mettere in comunicazione tutti i componenti che vanno a comporre il PC, 
+            <br>
+            oltre ad includere alcuni dei componenti necessari per il corretto funzionamento dello stesso.
+            <br>
+            <img src="ImgScheda.jpg">
+            <h2 id="periferiche">🎮 Periferiche</h2>
+            <p>Le periferiche sono dispositivi esterni che permettono di interagire con il computer.</p>
+            <ul>
+                <li><strong>Periferiche di input:</strong> Tastiera, mouse, scanner, microfono.</li>
+                <li><strong>Periferiche di output:</strong> Monitor, stampante, altoparlanti.</li>
+                <li><strong>Periferiche di input/output:</strong> Touchscreen, hard disk esterni.</li>
+            </ul>
+            <img src="ImgPeri.jpg">
+
+            <h2 id="software">💾 Software</h2>
+            <p>Il software è l’insieme di programmi che permettono al computer di funzionare.</p>
+            <ul>
+                <li><strong>Software di sistema:</strong> Gestisce il funzionamento del computer (es. sistema operativo).</li>
+                <li><strong>Software applicativo:</strong> Programmi per attività specifiche (es. Word, Photoshop).</li>
+                <li><strong>Middleware:</strong> Software che permette la comunicazione tra sistemi diversi.</li>
+            </ul>
+            Il software è un insieme di istruzioni e dati che informano un computer su come eseguire determinati compiti e operazioni.
 <br>
 Senza il software, un computer sarebbe incapace di eseguire alcuna funzione. 
 <br>
 Si tratta di una serie di istruzioni o programmi che indicano al computer di eseguire specifiche azioni
-<br>
 <img src="ImgSw.jpg">
-<br>
-<h2 id="Bios"> Bios</h2>
-<br>
-Il BIOS (acronimo di Basic Input/Output System) è un firmware che si trova nella scheda madre del computer in una memoria non volatile. 
+
+            <h2 id="bios">🖥 BIOS</h2>
+            <p>Il BIOS (Basic Input/Output System) è un firmware che avvia il computer e gestisce le operazioni di base dell’hardware.</p>
+            <p>Funzioni principali:</p>
+            <ul>
+                <li>Avvia il sistema e testa i componenti hardware.</li>
+                <li>Carica il sistema operativo.</li>
+                <li>Gestisce le impostazioni della scheda madre.</li>
+            </ul>
+            Il BIOS (acronimo di Basic Input/Output System) è un firmware che si trova nella scheda madre del computer in una memoria non volatile. 
 <br>
 Il BIOS contiene tutte le istruzioni per avviare il sistema operativo e per mettere in comunicazione l’hardware con il software. Per accedere al BIOS,
 <br>
 bisogna riavviare il computer e utilizzare l'esatta procedura per entrare o aprire il BIOS su tutti i computer
 <br>
 <img src="ImgBios.jpg">
-<br>
-<h2 id="Applicazione"> Applicazione </h2>
-<br>
-Un applicativo è un programma o un insieme di programmi che risolvono un problema specifico dell'utente finale. 
+
+            <h2 id="applicazioni">📱 Applicazioni</h2>
+            <p>Le applicazioni sono programmi progettati per eseguire funzioni specifiche.</p>
+            <p>Tipi di applicazioni:</p>
+            <ul>
+                <li><strong>Applicazioni desktop:</strong> Installate su PC (Microsoft Word, Photoshop).</li>
+                <li><strong>Applicazioni web:</strong> Funzionano tramite browser (Google Docs, Gmail).</li>
+                <li><strong>App mobile:</strong> Per smartphone e tablet (WhatsApp, Instagram).</li>
+            </ul>
+            Un applicativo è un programma o un insieme di programmi che risolvono un problema specifico dell'utente finale. 
 <br>
 Per funzionare richiede la presenza del sistema opertivo su cui il programma è stato sviluppato.
 <br>
 <img src="ImgApp.jpg">
-<br>
-<h2 id="Sistema Operativo"> Sistema Operativo </h2>
-<br>
-Un sistema operativo è una collezione di programmi che consente di eseguire le operazioni fondamentali del computer,
+
+            <h2 id="sistema-operativo">💻 Sistema Operativo</h2>
+            <p>Il sistema operativo è il software che gestisce hardware e software del computer.</p>
+            <p>Esempi di sistemi operativi:</p>
+            <ul>
+                <li><strong>Windows:</strong> Sistema più diffuso per PC.</li>
+                <li><strong>macOS:</strong> Ottimizzato per i dispositivi Apple.</li>
+                <li><strong>Linux:</strong> Open-source e altamente personalizzabile.</li>
+                <li><strong>Android e iOS:</strong> Per smartphone e tablet.</li>
+            </ul>
+            Un sistema operativo è una collezione di programmi che consente di eseguire le operazioni fondamentali del computer,
 <br>
 inizializza il sistema e assicura il corretto funzionamento della macchina. Il sistema operativo è un programma che, installato su di un dispositivo,
 <br>
@@ -82,9 +196,10 @@ I sistemi operativi sono software finalizzati alla gestione operativa delle riso
 <br>
 <img src="ImgOp.jpg">
 <br>
-<a href="indice.html">Ritorna alla pagina indice </a>
 
-
-
-
-
+            <a href="indice2.html" class="back-link">⬅ Torna all'Indice</a>
+        </div>
+    </main>
+  
+</body>
+</html>

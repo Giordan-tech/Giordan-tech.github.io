@@ -1,69 +1,165 @@
-<h1>Capitolo 3</h1>
-<br>
-<a href="#Ascii">Ascii </a>
-<br>
-<a href="#Numeri"> Numeri </a>
-<br>
-<a href="#Immagini">Immagini </a>
-<br>
-<a href="#Audio"> Audio </a>
-<br>
-<h2 id="Ascii">Ascii </h2>
-<br>
-ASCII (acronimo di American Standard Code for Information Interchange) è un codice per la codifica di caratteri.
-<br>
-Consiste in un insieme di 128 caratteri, ognuno rappresentato da un valore numerico,
-<br>
-che permette di scrivere e visualizzare testo su computer e dispositivi elettronici.
-<br>
-È diviso in 3 numeri per ogni lettera della tastiera.
-<br>
-<img src="ImgAscii.jpg">
-<br>
-<h2 id="Numeri"> Numeri </h2>
-<br>
-Si chiama sistema di numerazione l’insieme di un numero finito di simboli
-<br>
-e delle regole che assegnano uno ed un solo significato ad ogni scrittura formata coi simboli stessi.
-<br>
-I simboli di un sistema di numerazione prendono il nome di cifre.
-<br>
-<img src="ImgNum.jpg">
-<br>
-<h2 id="Immagini"> Immagini </h2>
-<br>
-Le immagini raster sono composte da una collezione di punti colorati, detti pixel (dalla contrazione del termine inglese picture elements), disposti a scacchiera.
-<br>
-Siccome i pixel sono molto piccoli, 
-<br>
-guardando l'immagine a grandezza naturale non ci si accorge di questo fatto. Se però si effettua un 
-<br>
-ingrandimento abbastanza elevato, i pixel diventano evidenti.
-<br>
-vengo suddivise in base x altezza per esempio:1024x768x32 o, più correttamente, 1024x768x32bit
-<br>
-dove l’ultimo numero indica la profondità di colore in bit.
-<br>
-<img src="ImgImg1.jpg">
-<img src="ImgImg2.jpg">
-<br>
-<h2 id="Audio"> Audio </h2>
-<br>
-<p id="ultimo">Il formato audio <b>PCM o Pulse Code Modulation</b> è una rappresentazione digitale di un insieme di segnali audio che si trovano allo stato grezzo.
-<br>
-Per registrare questo suono analogico è necessario catturare e poi selezionare le onde sonore a determinati intervalli, 
-<br>
-per poi trasformarle in bit digitali.
-<br>
-</p>
-<img src="ImgAudio.jpg">
-<br>
-<a href="indice.html">Ritorna alla pagina indice </a>
-<style>
-    #ultimo{ 
-        border: 5px blueviolet;
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 3 - Codifiche dell'Informazione</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?technology,data') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+        .container h2 {
+            color: #ffcc00;
+        }
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .index {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .index a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: block;
+            margin: 5px 0;
+        }
+        .index a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Capitolo 3: Codifiche dell'Informazione</h1>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="index">
+                <a href="#ascii">🔤 Codifica ASCII</a>
+                <a href="#numeri">🔢 Codifica dei Numeri</a>
+                <a href="#immagini">🖼️ Codifica delle Immagini</a>
+                <a href="#audio">🎵 Codifica dell'Audio</a>
+              
+            </div>
 
-    }
-</style>
-
-
+            <h2 id="ascii">🔤 Codifica ASCII</h2>
+            <p>L'ASCII (American Standard Code for Information Interchange) è un sistema di codifica dei caratteri utilizzato per rappresentare testo nei computer e nei dispositivi elettronici. Questo sistema assegna un valore numerico univoco a ciascun carattere, permettendo la comunicazione tra diversi sistemi informatici. Ad esempio, la lettera 'A' è rappresentata dal numero 65 in codice decimale, mentre lo spazio è rappresentato dal numero 32. ASCII supporta caratteri alfabetici, numerici e simboli di punteggiatura, ma ha dei limiti in quanto non include caratteri di alfabeti non latini.</p>
+            ASCII (acronimo di American Standard Code for Information Interchange) è un codice per la codifica di caratteri.
+            <br>
+            Consiste in un insieme di 128 caratteri, ognuno rappresentato da un valore numerico,
+            <br>
+            che permette di scrivere e visualizzare testo su computer e dispositivi elettronici.
+            <br>
+            È diviso in 3 numeri per ogni lettera della tastiera.
+            <br>
+            <img src="ImgAscii.jpg">
+            <h2 id="numeri">🔢 Codifica dei Numeri</h2>
+            <p>Nel mondo digitale, i numeri vengono rappresentati attraverso diversi sistemi di codifica:</p>
+            <ul>
+                <li><strong>Binario:</strong> Il sistema numerico base dei computer, che utilizza solo i simboli 0 e 1. Ad esempio, il numero decimale 5 è scritto in binario come 101.</li>
+                <li><strong>Complemento a due:</strong> Metodo per rappresentare numeri interi negativi, molto usato nell’aritmetica dei computer per semplificare le operazioni matematiche.</li>
+                <li><strong>Virgola mobile:</strong> Un formato avanzato per rappresentare numeri con decimali. Grazie a questo sistema, è possibile gestire sia numeri molto grandi che molto piccoli senza perdere precisione.</li>
+            </ul>
+            Si chiama sistema di numerazione l’insieme di un numero finito di simboli
+            <br>
+            e delle regole che assegnano uno ed un solo significato ad ogni scrittura formata coi simboli stessi.
+            <br>
+            I simboli di un sistema di numerazione prendono il nome di cifre.
+            <br>
+            <img src="ImgNum.jpg">
+            <h2 id="immagini">🖼️ Codifica delle Immagini</h2>
+            <p>Le immagini digitali sono rappresentate attraverso una griglia di pixel, dove ogni pixel ha un colore specifico. Il colore è codificato attraverso modelli come:</p>
+            <ul>
+                <li><strong>RGB:</strong> Utilizza tre canali di colore (rosso, verde, blu) per rappresentare ogni pixel, combinandoli in diverse intensità.</li>
+                <li><strong>CMYK:</strong> Usato principalmente nella stampa, utilizza i colori ciano, magenta, giallo e nero.</li>
+                <li><strong>Grayscale:</strong> Rappresenta immagini in scala di grigi, utilizzando valori che vanno dal nero al bianco.</li>
+            </ul>
+            Le immagini raster sono composte da una collezione di punti colorati, detti pixel (dalla contrazione del termine inglese picture elements), disposti a scacchiera.
+            <br>
+            Siccome i pixel sono molto piccoli, 
+            <br>
+            guardando l'immagine a grandezza naturale non ci si accorge di questo fatto. Se però si effettua un 
+            <br>
+            ingrandimento abbastanza elevato, i pixel diventano evidenti.
+            <br>
+            vengo suddivise in base x altezza per esempio:1024x768x32 o, più correttamente, 1024x768x32bit
+            <br>
+            dove l’ultimo numero indica la profondità di colore in bit.
+            <br>
+            <img src="ImgImg1.jpg">
+            <img src="ImgImg2.jpg">
+            <h2 id="audio">🎵 Codifica dell'Audio</h2>
+            <p>L’audio digitale è una rappresentazione numerica di onde sonore analogiche. Il processo di digitalizzazione dell’audio include:</p>
+            <ul>
+                <li><strong>Campionamento:</strong> Registrazione del suono a intervalli regolari (es. 44.1 kHz per i CD).</li>
+                <li><strong>Quantizzazione:</strong> Assegnazione di valori numerici ai campioni registrati.</li>
+            </ul>
+            <p>Formati comuni per la codifica audio includono MP3 (compressione con perdita), WAV (qualità non compressa) e AAC (ottimizzato per lo streaming).</p>
+            Il formato audio <b>PCM o Pulse Code Modulation</b> è una rappresentazione digitale di un insieme di segnali audio che si trovano allo stato grezzo.
+            <br>
+            Per registrare questo suono analogico è necessario catturare e poi selezionare le onde sonore a determinati intervalli, 
+            <br>
+            per poi trasformarle in bit digitali.
+            <br>
+            </p>
+            <img src="ImgAudio.jpg">
+          
+            <a href="indice2.html" class="back-link">⬅ Torna all'Indice</a>
+        </div>
+    </main>
+    
+</body>
+</html>
