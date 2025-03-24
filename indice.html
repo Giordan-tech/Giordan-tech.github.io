@@ -1,42 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice - Il Mio Libro di Informatica</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .container h2 {
+            color: #ffcc00;
+        }
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .container ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        .container ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-<h1>INDICE</h1>
-<br>
-<h2>Capitolo 1 </h2><a href="capitolo1.html">vai al capitolo 1 </a>
-<br>
-<b>Cos'è l'informatica</b>
-  <br>
-<ul>
-<li>La Scienza</li>
-  <li>La Storia </li>
-<li>Aspetti negativi e positivi</li>
-<li>Comportamento in rete</li>
-  </ul>
- <h2>Capitolo 2</h2> <a/> <a href="capitolo2.html">vai al capitolo 2 </a>
-    <br>
-    <b>Componenti del computer</b>
-  <br>
-    <ul>
-  <li>Hadware</li>
-  <li>Software</li>
-    </ul>
-   <br>
-    <h2>Capitolo 3</h2> <a/> <a href="capitolo3.html">vai al capitolo 3 </a>
-      <br>
-      <b>Codifiche</b>
-      <ul>
-<li>Codifica dei testi</li>
-<li>Codifica delle immagini</li>
-<li>Occupazione di memoria delle immagini</li>
-<li>Codifiche audio e numeriche</li>
-      </ul>
+    <header>
+        <h1>Indice</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Capitoli</h2>
+            <ul>
+                <li><a href="capitolo1.html">Capitolo 1 - Introduzione</a></li>
+                <li><a href="capitolo2.html">Capitolo 2 - Hardware e Software</a></li>
+                <li><a href="capitolo3.html">Capitolo 3 - Codifiche</a></li>
+                <li><a href="capitolo4.html">Capitolo 4 -Algoritmi e Programmazione</a></li>
+                <li><a href="capitolo5.html">Capitolo 5 -Reti</a></li>
+            </ul>
+            <a href="copertina.html" style="color: #ffcc00; font-size: 1.2em; display: block; margin-top: 20px;">Torna alla Copertina</a>
+        </div>
+    </main>
+  
+</body>
+</html>
 
-   
-   </h2><a href="copertina.html">Ritorna alla copertina </a>
-  </body>
-  <style>
-    body {
-      background-image: url("libro.jpg");
-    }
-  </style>
-   
-   
