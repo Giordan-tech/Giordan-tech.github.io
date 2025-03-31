@@ -1,0 +1,39 @@
+<div class="quadro">
+    <div class="cubo"></div>
+    <div class="cubo nero"></div>
+    <div class="cubo"></div>
+    
+    <div class="cubo"></div>
+    <div class="cubo"></div>
+    <div class="cubo nero"></div>
+    
+    <div class="cubo nero"></div>
+    <div class="cubo nero"></div>
+    <div class="cubo nero"></div>
+</div>
+<style>
+.quadro {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 1px;
+    background-color: black;
+    width: 153px; /* 3 * 50px + 2 * 1px gap */
+    height: 153px;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.cubo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.cubo.nero {
+    background-color: black;
+}
+
+
+</style>
